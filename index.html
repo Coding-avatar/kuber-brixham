@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kuber</title>
+    <!-- Default Style -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/defaultStyles.css">
+    <link rel="stylesheet" id="color-theme" href="css/color-light.css" name="">
+    <!-- This page styles -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="container" style="overflow: hidden;">
+        <div id="menu">
+            <div id="menu-top">
+                <div id="menu-logo"><img src="images/kuber.png" width="32" height="32" alt="logo"></div>
+                <div id="menu-button"><button id="menuButton"><img src="images/menu.png" width="32" height="32" alt="menu"></button></div>
+            </div>
+            <div id="menu-items">
+                <a href="dashboard.html" target="content"><div class="menu-item">
+                    <img src="images/3d-cube.png" width="16" height="16" alt="menu item">
+                    &nbsp;&nbsp;
+                    <h1>Dashboard</h1>
+                </div></a>
+                <a href="dashboard.html" target="content"></a><div class="menu-item">
+                    <img src="images/3d-cube.png" width="16" height="16" alt="menu item">
+                    &nbsp;&nbsp;
+                    <h1>USER CHAT</h1>
+                </div>
+                <a href="dashboard.html" target="content"><div class="menu-item">
+                    <img src="images/3d-cube.png" width="16" height="16" alt="menu item">
+                    &nbsp;&nbsp;
+                    <h1>CHANGE PASSWORD</h1>
+                </div></a>
+                <a href="dashboard.html" target="content"></a><div class="menu-item">
+                    <img src="images/3d-cube.png" width="16" height="16" alt="menu item">
+                    &nbsp;&nbsp;
+                    <h1>USER LIST</h1>
+                </div>
+                <a href="addUser.html" target="content">
+                    <div class="menu-item">
+                        <img src="images/menu.png" width="16" height="16" alt="menu item">
+                        &nbsp;&nbsp;
+                        <h1>ADD USER</h1>
+                    </div>
+                </a>
+                <a href="noticeboard.html" target="content">
+                    <div class="menu-item">
+                        <img src="images/3d-cube.png" width="16" height="16" alt="menu item">
+                        &nbsp;&nbsp;
+                        <h1>NOTICE BOARD</h1>
+                    </div>
+                </a>
+                <a href="bannerUpdate.html" target="content">
+                    <div class="menu-item">
+                        <img src="images/3d-cube.png" width="16" height="16" alt="menu item">
+                        &nbsp;&nbsp;
+                        <h1>BANNER UPDATE</h1>
+                    </div>
+                </a>
+                <a href="upiMccChange.html" target="content">
+                    <div class="menu-item">
+                        <img src="images/3d-cube.png" width="16" height="16" alt="menu item">
+                        &nbsp;&nbsp;
+                        <h1>UPI & MCC Change</h1>
+                    </div>
+                </a>
+                <a href="dashboard.html" target="content">
+                    <div class="menu-item">
+                        <img src="images/3d-cube.png" width="16" height="16" alt="menu item">
+                        &nbsp;&nbsp;
+                        <h1>POINT REQUEST</h1>
+                    </div>
+                </a>
+                <a href="dashboard.html" target="content">
+                    <div class="menu-item">
+                        <img src="images/3d-cube.png" width="16" height="16" alt="menu item">
+                        &nbsp;&nbsp;
+                        <h1>WITHDRAW REQUEST</h1>
+                    </div>
+                </a>
+                <a href="dashboard.html" target="content">
+                    <div class="menu-item">
+                        <img src="images/3d-cube.png" width="16" height="16" alt="menu item">
+                        &nbsp;&nbsp;
+                        <h1>DETAILS CHANGE</h1>
+                    </div>
+                </a>
+                <a href="dashboard.html" target="content">
+                    <div class="menu-item">
+                        <img src="images/3d-cube.png" width="16" height="16" alt="menu item">
+                        &nbsp;&nbsp;
+                        <h1>HOW TO PLAY</h1>
+                    </div>
+                </a>
+                <a href="dashboard.html" target="content">
+                    <div class="menu-item">
+                        <img src="images/3d-cube.png" width="16" height="16" alt="menu item">
+                        &nbsp;&nbsp;
+                        <h1>MARKET WISE P & L</h1>
+                    </div>
+                </a>
+                <a href="dashboard.html" target="content">
+                    <div class="menu-item">
+                        <img src="images/3d-cube.png" width="16" height="16" alt="menu item">
+                        &nbsp;&nbsp;
+                        <h1>GAME RULES</h1>
+                    </div>
+                </a>
+                <a href="dashboard.html" target="content">
+                    <div class="menu-item">
+                        <img src="images/3d-cube.png" width="16" height="16" alt="menu item">
+                        &nbsp;&nbsp;
+                        <h1>ADD OPEN CLOSE</h1>
+                        <br>
+                        <h1>MARKET</h1>
+                    </div>
+                </a>
+                <a href="dashboard.html" target="content">
+                    <div class="menu-item">
+                        <img src="images/3d-cube.png" width="16" height="16" alt="menu item">
+                        &nbsp;&nbsp;
+                        <h1>GAME RULES</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="header">
+            <div id="theme-button"><button id="themeButton" onclick="toggleTheme()"><img src="images/sun.png" width="32" height="32" id="themeButton" alt="sun"></button></div>
+        </div>
+        <div id="content-area"><iframe id="content" name="content" src="dashboard.html" frameborder="0"></iframe></div>
+    </div>
+    <script>
+        function toggleTheme(){
+            let colorLink = document.getElementById("color-theme").href
+            if(colorLink.substring(colorLink.length-19)=="css/color-light.css")
+            {
+                document.getElementById("color-theme").href="css/color-dark.css"
+                document.getElementById("themeButton").src="images/sun.png"
+            }
+            else{
+                document.getElementById("color-theme").href="css/color-light.css"
+                document.getElementById("themeButton").src="images/moon.png"
+            }
+        }
+//         function myFunction() {
+//    var element = document.body;
+//    element.classList.toggle("dark-mode");
+// }
+    </script>
+</body>
+</html>
