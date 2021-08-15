@@ -9,3 +9,48 @@
 #content-area{
     background-color: #121212;
 }
+.surface-color{
+    background-color: #121212;
+}
+.primary-color{
+    color: #673AB7;
+}
+.light-primary-color{
+    color: #B39DDB;
+}
+.dark-primary-color{
+    color: #311B92;
+}
+.secondary-color{
+    color: #E91E63;
+}
+.light-secondary-color{
+    color: #F48FB1;
+}
+.dark-secondary-color{
+    color: #AD1457;
+}
+.success-color{
+    color: #00C851;
+}
+.dark-success-color{
+    color: #00AD1F;
+}
+.warning-color{
+    color: #FFDE03;
+}
+.dark-warning-color{
+    color: #FFAB00;
+}
+.error-color{
+    color: #E21414;
+}
+.dark-error-color{
+    color: #CC0000;
+}
+.info-color{
+    color: #14E2E2;
+}
+.dark-info-color{
+    color: #00C2C9;
+}
